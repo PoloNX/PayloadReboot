@@ -1,0 +1,557 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-msys
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Wed Jun  1 18:34:50 2022
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+CUDA_PATH_V11_5 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5
+# environment
+SYSTEMDRIVE = C:
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 20)
+PORTLIBS_PATH := /opt/devkitpro/portlibs
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 30)
+AS := aarch64-none-elf-as
+# makefile (from 'Makefile', line 55)
+OUTPUT := /home/geyre/Desktop/PayloadReboot/PayloadReboot
+# environment
+LC_ALL = C
+# environment
+VBOX_HWVIRTEX_IGNORE_SVM_IN_USE = 1
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 31)
+AR := aarch64-none-elf-gcc-ar
+# environment
+USERPROFILE = C:\Users\geyre
+# makefile (from 'Makefile', line 84)
+ 
+OFILES :=  cursor.o entity.o input.o main.o menu.o reboot.o renderWindow.o  
+# environment
+LOCALAPPDATA = C:\Users\geyre\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-6a136236-cbbf-4ab2-88da-f36682757fed-sock
+# makefile (from 'Makefile', line 58)
+VPATH := /home/geyre/Desktop/PayloadReboot/source /home/geyre/Desktop/PayloadReboot/data
+# makefile (from 'Makefile', line 63)
+CFILES := 
+# environment
+VSCODE_CWD = C:\Users\geyre\Desktop\PayloadReboot
+# environment
+SYSTEMROOT = C:\Windows
+# makefile (from 'Makefile', line 39)
+LIBS := -lminizip -lstdc++fs -lz -lfreetype -lSDL2_ttf -lSDL2_gfx -lSDL2_image -lSDL2 -lEGL -lGLESv2 -lglapi -ldrm_nouveau -lwebp -lpng -ljpeg `sdl2-config --libs` `freetype-config --libs` -lnx `curl-config --libs`
+# environment
+NVCUDASAMPLES11_5_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.5
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 50)
+SILENTMSG := @echo
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+PSMODULEPATH = C:\Program Files (x86)\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\AutoIt3\AutoItX
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 14)
+APP_VERSION := 0.0.1
+# makefile (from 'Makefile', line 82)
+OFILES_BIN := 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+DOKANLIBRARY1_LIBRARYPATH_X64 = C:\Program Files\Dokan\Dokan Library-1.1.0\lib\
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12220_SOVWDMVHFNXYWRZJ
+# makefile (from 'Makefile', line 64)
+CPPFILES := cursor.cpp entity.cpp input.cpp main.cpp menu.cpp reboot.cpp renderWindow.cpp
+# makefile (from '/opt/devkitpro/libnx/switch_rules', line 10)
+LIBNX = $(DEVKITPRO)/libnx
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# makefile (from '/opt/devkitpro/libnx/switch_rules', line 39)
+define make_pfs0
+	@mkdir -p exefs
+	@[ $(BUILD_EXEFS_SRC) ] && [ -d $(BUILD_EXEFS_SRC) ] && cp -R $(BUILD_EXEFS_SRC)/* exefs || echo > /dev/null
+	@cp $*.nso exefs/main
+	@[ $(APP_JSON) ] && cp $*.npdm exefs/main.npdm || echo > /dev/null
+	@build_pfs0 exefs $@
+	@echo built ... $(notdir $@)
+endef
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\geyre\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /home/geyre/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 65)
+SFILES := 
+# environment
+ONEDRIVE = C:\Users\geyre\OneDrive
+# environment
+DEVKITARM = /opt/devkitpro/devkitARM
+# makefile
+CURDIR := /home/geyre/Desktop/PayloadReboot
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+DOKANLIBRARY1_LIBRARYPATH_X86 = C:\Program Files\Dokan\Dokan Library-1.1.0\x86\lib\
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 61)
+DEPSDIR := /home/geyre/Desktop/PayloadReboot/build
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Users\geyre\Desktop\PayloadReboot
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 1)
+MAKEFILE_LIST := Makefile /opt/devkitpro/libnx/switch_rules /opt/devkitpro/devkitA64/base_rules /opt/devkitpro/devkitA64/base_tools
+# makefile (from 'Makefile', line 36)
+ASFLAGS := -g `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_image` -g -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 12220
+# environment
+CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 35)
+RANLIB := aarch64-none-elf-gcc-ranlib
+# environment
+DEVKITPPC = /opt/devkitpro/devkitPPC
+# makefile (from 'Makefile', line 13)
+APP_AUTHOR := PoloNX
+# makefile (from 'Makefile', line 20)
+INCLUDES := include
+# makefile (from 'Makefile', line 107)
+icons := 
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{"*":"fr"},"_languagePackId":"25fe6a3290ec415596628d4afc87a88c.fr","_translationsConfigFile":"C:\\Users\\geyre\\AppData\\Roaming\\Code\\clp\\25fe6a3290ec415596628d4afc87a88c.fr\\tcf.json","_cacheRoot":"C:\\Users\\geyre\\AppData\\Roaming\\Code\\clp\\25fe6a3290ec415596628d4afc87a88c.fr","_resolvedLanguagePackCoreLocation":"C:\\Users\\geyre\\AppData\\Roaming\\Code\\clp\\25fe6a3290ec415596628d4afc87a88c.fr\\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"C:\\Users\\geyre\\AppData\\Roaming\\Code\\clp\\25fe6a3290ec415596628d4afc87a88c.fr\\corrupted.info","_languagePackSupport":true}
+# makefile (from '/opt/devkitpro/libnx/switch_rules', line 25)
+APP_ICON := /opt/devkitpro/libnx/default_icon.jpg
+# makefile (from 'Makefile', line 87)
+INCLUDE := -I/home/geyre/Desktop/PayloadReboot/include -I/opt/devkitpro/portlibs/switch/include -I/opt/devkitpro/libnx/include -I/home/geyre/Desktop/PayloadReboot/build
+# environment
+JD2_HOME = C:\Users\geyre\AppData\Local\JDownloader 2.0
+# environment
+ONEDRIVECONSUMER = C:\Users\geyre\OneDrive
+# default
+MAKE_HOST := x86_64-pc-msys
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\geyre
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+WINDIR = C:\Windows
+# makefile (from 'Makefile', line 66)
+BINFILES := 
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 91)
+LIBPATHS := -L/opt/devkitpro/portlibs/switch/lib -L/opt/devkitpro/libnx/lib
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from '/opt/devkitpro/libnx/switch_rules', line 8)
+ 
+PATH := /opt/devkitpro/portlibs/switch/bin:/opt/devkitpro/tools/bin:/opt/devkitpro/devkitA64/bin:/c/Program Files/Eclipse Adoptium/jdk-11.0.14.101-hotspot/bin:/c/Program Files/Eclipse Foundation/jdk-8.0.302.8-hotspot/bin:/c/Program Files/ImageMagick-7.1.0-Q16-HDRI:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/bin:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.5/libnvvp:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/opt/devkitpro/msys2/usr/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Windows/System32/OpenSSH:/d/Logiciel/Git/cmd:/c/MinGW/bin:/opt/devkitpro/tools/bin:/d/Programmation/C++/Library/SDL2_VS/lib/x64:/c/Program Files/CMake/bin:/c/Program Files/NVIDIA Corporation/Nsight Compute 2021.3.0:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/ffmprg/bin:/c/Program Files/nodejs:/c/vclib/SDL2/lib/x64:/c/vclib/SDL2_ttf-2.0.18/lib/x64:/c/vclib/vcpkg:/c/Program Files/010 Editor:/home/geyre/scoop/shims:/home/geyre/AppData/Local/Programs/Python/Python39/Scripts:/home/geyre/AppData/Local/Programs/Python/Python39:/home/geyre/AppData/Local/Microsoft/WindowsApps:/d/Logiciel/Microsoft VS Code/bin:/home/geyre/spicetify-cli:/home/geyre/AppData/Roaming/npm:/c/Program Files/heroku/bin
+# environment
+COMPUTERNAME = DESKTOP-20558
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 5)
+UNAME_R := 3.2.0-340.x86_64
+# makefile (from 'Makefile', line 94)
+jsons := 
+# environment
+PROMPT = $P$G
+# environment
+NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 26)
+PREFIX := aarch64-none-elf-
+# makefile (from 'Makefile', line 45)
+LIBDIRS := /opt/devkitpro/portlibs/switch /opt/devkitpro/libnx
+# environment
+LOGONSERVER = \\DESKTOP-20558
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = geyre
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 57)
+bin2o = 	bin2s -a 8 -H `(echo $(<F) | tr . _)`.h $< | $(AS) -o $(<F).o
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+DEVKITPRO = /opt/devkitpro
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 4)
+UNAME_S := MSYS_NT-10.0-19043
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-20558
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+DOKANLIBRARY1 = C:\Program Files\Dokan\Dokan Library-1.1.0\
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 26)
+ARCH := `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_image` -g -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# makefile (from 'Makefile', line 83)
+OFILES_SRC := cursor.o entity.o input.o main.o menu.o reboot.o renderWindow.o  
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 51)
+SILENTCMD := @
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# makefile (from 'Makefile', line 17)
+BUILD := build
+# makefile (from 'Makefile', line 56)
+TOPDIR := /home/geyre/Desktop/PayloadReboot
+# makefile (from 'Makefile', line 37)
+LDFLAGS = -specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
+# environment
+NVCUDASAMPLES_ROOT = C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.5
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-20558
+# environment
+NUMBER_OF_PROCESSORS = 16
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 37)
+ISVC = $(or $(VCBUILDHELPER_COMMAND),$(MSBUILDEXTENSIONSPATH32),$(MSBUILDEXTENSIONSPATH))
+# environment
+PUBLIC = C:\Users\Public
+# environment
+ASL.LOG = Destination=file
+# environment
+APPDATA = C:\Users\geyre\AppData\Roaming
+# makefile (from 'Makefile', line 32)
+CFLAGS := -g -Wall -O2 -ffunction-sections `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_image` -g -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE   -D__SWITCH__
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# makefile (from 'Makefile', line 132)
+NROFLAGS = --icon=$(APP_ICON) --nacp=$(CURDIR)/$(TARGET).nacp --romfsdir=$(CURDIR)/$(ROMFS)
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/geyre
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 14)
+DEVKITPATH = $(shell echo "$(DEVKITPRO)" | sed -e 's/^\([a-zA-Z]\):/\/\1/')
+# makefile (from '/opt/devkitpro/libnx/switch_rules', line 7)
+PORTLIBS := /opt/devkitpro/portlibs/switch
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /home/geyre/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\af89cf11aaa70950cde1d38bf3e8f53a-1.67.2-main-sock
+# environment
+TERM = xterm-256color
+# environment
+DXSDK_DIR = C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 34)
+NM := aarch64-none-elf-gcc-nm
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 21)
+ROMFS := romfs
+# makefile (from 'Makefile', line 85)
+HFILES_BIN := 
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from 'Makefile', line 16)
+TARGET := PayloadReboot
+# makefile (from 'Makefile', line 77)
+LD := aarch64-none-elf-g++
+# environment
+SESSIONNAME = Console
+# makefile (from 'Makefile', line 34)
+CXXFLAGS := -g -Wall -O2 -ffunction-sections `aarch64-none-elf-pkg-config --cflags sdl2 SDL2_image` -g -Wall -O2 -ffunction-sections -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE   -D__SWITCH__ -fexceptions -fno-rtti -fno-exceptions -std=gnu++17 -Wno-reorder
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 33)
+STRIP := aarch64-none-elf-strip
+# default
+ 
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+PROCESSOR_REVISION = 0802
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 29)
+CXX := aarch64-none-elf-g++
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 28)
+CC := aarch64-none-elf-gcc
+# makefile (from '/opt/devkitpro/devkitA64/base_tools', line 32)
+OBJCOPY := aarch64-none-elf-objcopy
+# makefile (from 'Makefile', line 18)
+SOURCES := source
+# makefile (from 'Makefile', line 12)
+APP_TITLE := PayloadReboot
+# makefile (from 'Makefile', line 19)
+DATA := data
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
+# variable set hash-table stats:
+# Load=168/1024=16%, Rehash=0, Collisions=35/338=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /home/geyre/Desktop/PayloadReboot/data: could not be stat'd.
+# . (device 633659225, inode 12666373952105222): 14 files, no impossibilities.
+# source (device 633659225, inode 16888498602765689): 9 files, no impossibilities.
+# data: could not be stat'd.
+# /home/geyre/Desktop/PayloadReboot/source (device 633659225, inode 16888498602765689): 9 files, no impossibilities.
+
+# 32 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+%.a:
+#  recipe to execute (from '/opt/devkitpro/devkitA64/base_rules', line 6):
+	$(SILENTMSG) $(notdir $@)
+	@rm -f $@
+	$(SILENTCMD)$(AR) -rc $@ $^
+
+%.o: %.cpp
+#  recipe to execute (from '/opt/devkitpro/devkitA64/base_rules', line 13):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.o: %.c
+#  recipe to execute (from '/opt/devkitpro/devkitA64/base_rules', line 18):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(CFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.o: %.s
+#  recipe to execute (from '/opt/devkitpro/devkitA64/base_rules', line 23):
+	@echo $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.o: %.S
+#  recipe to execute (from '/opt/devkitpro/devkitA64/base_rules', line 28):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@ $(ERROR_FILTER)
+
+%.nacp: Makefile /opt/devkitpro/libnx/switch_rules /opt/devkitpro/devkitA64/base_rules /opt/devkitpro/devkitA64/base_tools
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 30):
+	@nacptool --create "$(APP_TITLE)" "$(APP_AUTHOR)" "$(APP_VERSION)" $@ $(NACPFLAGS)
+	@echo built ... $(notdir $@)
+
+%.npdm:
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 35):
+	@npdmtool $< $@
+	@echo built ... $(notdir $@)
+
+%.pfs0: %.nso
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 53):
+	$(make_pfs0)
+
+%.nsp: %.nso
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 60):
+	$(make_pfs0)
+
+%.nso: %.elf
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 64):
+	@elf2nso $< $@
+	@echo built ... $(notdir $@)
+
+%.nro: %.elf
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 69):
+	@elf2nro $< $@ $(NROFLAGS)
+	@echo built ... $(notdir $@)
+
+%.kip: %.elf
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 74):
+	@elf2kip $< $(APP_JSON) $@
+	@echo built ... $(notdir $@)
+
+%.elf:
+#  recipe to execute (from '/opt/devkitpro/libnx/switch_rules', line 79):
+	@echo linking $(notdir $@)
+	@$(LD) $(LDFLAGS) $(OFILES) $(LIBPATHS) $(LIBS) -o $@
+	@$(NM) -CSn $@ > $(notdir $*.lst)
+
+# 13 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+/opt/devkitpro/libnx/switch_rules:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-25 19:29:40
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-14 13:23:27.6557141
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 146):
+	@echo clean ...
+	@rm -fr $(BUILD) $(TARGET).nro $(TARGET).nacp $(TARGET).elf
+
+# Not a target:
+/opt/devkitpro/devkitA64/base_tools:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-28 04:23:39
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: build
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build
+# automatic
+ 
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/17=12%
+#  recipe to execute (from 'Makefile', line 141):
+	@[ -d $@ ] || mkdir -p $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
+
+# Not a target:
+/opt/devkitpro/devkitA64/base_rules:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-28 04:23:39
+#  File has been updated.
+#  Successfully updated.
+
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: build clean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/32=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# General ('VPATH' variable) search path:
+# /home/geyre/Desktop/PayloadReboot/source:/home/geyre/Desktop/PayloadReboot/data
+
+# strcache buffers: 1 (0) / strings = 48 / storage = 559 B / avg = 11 B
+# current buf: size = 8162 B / used = 559 B / count = 48 / avg = 11 B
+
+# strcache performance: lookups = 85 / hit rate = 43%
+# hash-table stats:
+# Load=48/8192=1%, Rehash=0, Collisions=1/85=1%
+# Finished Make data base on Wed Jun  1 18:34:50 2022
+
+ 
