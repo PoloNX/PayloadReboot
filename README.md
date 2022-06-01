@@ -29,5 +29,5 @@ To build the project you have to download, install devkitpro and follow these co
 - Thanks SciresM for fusee : https://github.com/Atmosphere-NX/Atmosphere
 - Thanks CTCaer for hekate : https://github.com/CTCaer/hekate/releases
 - Thanks shchmue for lockpick_rcm : https://github.com/shchmue/Lockpick_RCM
-- Thanks Zoria to add me in his pack : https://github.com/THZoria/AtmoPack-Vanilla
+- Thanks Zoria to added me in his pack : https://github.com/THZoria/AtmoPack-Vanilla
 
