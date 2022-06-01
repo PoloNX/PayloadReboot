@@ -13,7 +13,7 @@ PayloadReboot is an homebrew for Nintendo Switch which reboot to payload
 
 To build the project you have to download, install devkitpro and follow these commands :
 
-``sudo dkp-pacman -S switch-sdl2 switch-sdl2_ttf switch-sdl2_image switch-SDL2_gfx``  
+``sudo dkp-pacman -S switch-sdl2 switch-sdl2_ttf switch-sdl2_image switch-sdl2_gfx``  
 ``git clone https://github.com/PoloNX/PayloadReboot  ``  
 ``cd PayloadReboot  ``  
 ``make  ``  
