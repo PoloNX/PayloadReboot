@@ -17,6 +17,7 @@ private:
     int column = 0;
     SDL_Rect rectCursor {0, 0, 0, 0};
     void moveCursorX(bool right);
+    void cursorRecenter();
 
     void refreshPos();
 public:

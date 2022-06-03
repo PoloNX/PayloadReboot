@@ -87,17 +87,39 @@ bool Cursor::checkInputCursor(int value)
     return false;
 }
 
+void Cursor::cursorRecenter()
+{
+    if (line == 0){
+        if (column > 3){
+            column = 0;
+        }
+        if (column < 0){
+            column = 3;
+        }
+    }
+
+    if (line == 1){
+        if (column > 1){
+            column = 0;
+        }
+        if (column < 0){
+            column = 1;
+        }
+    }
+}
+
 void Cursor::printCursor(RenderWindow render)
 {
-    if (column > 3){
-        column = 0;
-    }
-    if (column < 0){
-        column = 3;
-    }
+    cursorRecenter();
     refreshPos();
-    rectCursor = {posX, posY, cursorWandH, cursorWandH};
-    render.renderRect(rectCursor);
+    if (line == 0){
+        rectCursor = {posX, posY, cursorWandH, cursorWandH};
+        render.renderRect(rectCursor);
+    }
+
+    else if (line == 1){
+        render.renderCursorCircle(column);
+    }
 }
 
 void Cursor::refreshPos(){
@@ -109,6 +131,8 @@ void Cursor::refreshPos(){
         posX = 552 + column * (100);
     }
 }
+
+
 
 
 

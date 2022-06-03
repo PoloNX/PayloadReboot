@@ -36,6 +36,8 @@ public:
 	int horizontal = 0;
 	int vertical = 0;
 
+	void renderCursorCircle(int column);
+
 	void drawCircleBehindIcons();
 
 private:

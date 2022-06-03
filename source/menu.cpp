@@ -83,7 +83,6 @@ void Menu::printMenu()
     vEntity.push_back(Entity (Vector2f(horizontal / 2 + size.x * 0.5, 550), tInfo, size.x, size.y, 0, 0));
 
 
-
     for (auto i : vEntity)
     {
         window.render(i, 1);

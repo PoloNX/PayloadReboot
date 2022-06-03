@@ -103,7 +103,7 @@ void RenderWindow::renderRect(SDL_Rect rect)
 		rectangleRGBA(renderer, cursor.getPosX() + 258 + i, cursor.getPosY() - i, cursor.getPosX() - i, cursor.getPosY() + 258 + i, 25, 145, 218, 255);
 	}*/
 
-	SDL_SetRenderDrawColor(renderer, 25, 145, 218, 255);
+	SDL_SetRenderDrawColor(renderer, 3, 194, 195, 255);
 	for (int i = 0; i < 5; ++i){
 		rect.w += 2;
 		rect.h += 2;
@@ -119,3 +119,11 @@ void RenderWindow::drawCircleBehindIcons()
 	filledCircleRGBA(renderer, 1280 / 2 + 50, 575, 38, 80, 80, 80, 255);
 	filledCircleRGBA(renderer, 1280 / 2 - 50, 575, 38, 80, 80, 80, 255);
 }
+
+void RenderWindow::renderCursorCircle(int column)
+{
+	for (int i = 0; i < 6; ++i){
+		circleRGBA(renderer, 552 + column * (100) + 38, 575, 38 + i, 3, 194, 195, 255);
+	}
+}
+
