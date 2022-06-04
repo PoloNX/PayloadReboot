@@ -70,7 +70,7 @@ void Menu::printMenu()
     vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x, rectTemplate.y), tHekate, 258, 258, 0, 0));
     vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + rectTemplate.w + 14, rectTemplate.y), tAMS, 258, 258, 0, 0));
     vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + (rectTemplate.w + 14) * 2, rectTemplate.y), tLockpick, 258, 258, 0, 0));
-    vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + (rectTemplate.w + 14) * 3, rectTemplate.y), tLakka, 258, 258, 0, 0));
+    //vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + (rectTemplate.w + 14) * 3, rectTemplate.y), tLakka, 258, 258, 0, 0));
 
     /*CIRCLE BEHIND SMALL ICONS*/
     window.drawCircleBehindIcons();

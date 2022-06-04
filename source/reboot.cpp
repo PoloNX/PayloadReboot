@@ -72,15 +72,18 @@ std::string whichPayload(int payload)
         return "payload/lockpick.bin";
     }
 
-    else if (payload == 3)  //LAKKA
-    {
-        return "payload/lakka.rom";
+    else if (payload > 2){
+        return "null";
     }
 }
 
 void Reboot::rebootNow(int payload) //0 = hekate, 1 = ams, 2 = lockpick, 3 = lakka
 {
     Result rc = splInitialize();
+
+    if (whichPayload(payload) == "null"){
+        return;
+    }
 
     FILE *f = fopen(whichPayload(payload).c_str(), "rb");
     

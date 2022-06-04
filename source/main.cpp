@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 
 	SDL_Event event;
 	int inputValue = -1;
+	int inputcheck = 0;
 
     bool isOpen = true;
 
@@ -37,9 +38,14 @@ int main(int argc, char *argv[])
 			{
 				case SDL_JOYBUTTONDOWN:
 					inputValue = event.jbutton.button;
-					if(cursor.checkInputCursor(inputValue))
+					inputcheck = cursor.checkInputCursor(inputValue);
+					if(inputcheck == 1)
 					{
 						menu.printAbout();
+					}
+					else if(inputcheck == 2)
+					{
+						isOpen = false;
 					}
 				
 				default:
@@ -56,14 +62,15 @@ int main(int argc, char *argv[])
 
 		cursor.printCursor(window);
 
-
-
-
 		window.display();
 
 		SDL_Delay(1000 / window.getRefreshRate());
 	}
 
+	SDL_Quit();
+	IMG_Quit();
+	TTF_Quit();
+	return 0;
 }
 
 void init()
@@ -83,7 +90,7 @@ void init()
 
 	if (!(TTF_Init()))
 	{
-		std::cout << "HEY... IMG_Init HAS FAILED. SDL_ERROR: " << TTF_GetError() << std::endl;
+		std::cout << "HEY... TTF_Init HAS FAILED. SDL_ERROR: " << TTF_GetError() << std::endl;
 	}
 
     std::cout << "after ttf\n";

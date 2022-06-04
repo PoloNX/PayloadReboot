@@ -25,7 +25,7 @@ void Cursor::moveCursorX(bool right)
     }
 }
 
-bool Cursor::checkInputCursor(int value)
+int Cursor::checkInputCursor(int value)
 {
     std::cout << "dans check input\n";
 
@@ -79,7 +79,11 @@ bool Cursor::checkInputCursor(int value)
         }
 
         else if (line == 1 and column == 1){
-            return true;
+            return 1;
+        }
+
+        else if (line == 1 and column == 0){
+            return 2;
         }
 
     }    

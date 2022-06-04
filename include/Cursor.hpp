@@ -25,7 +25,7 @@ public:
 
     void printCursor(RenderWindow render);
 
-    bool checkInputCursor(int value);
+    int checkInputCursor(int value);
 
     int getPosX(){
         return posX;
