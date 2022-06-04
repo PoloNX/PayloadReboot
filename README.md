@@ -21,7 +21,7 @@ To build the project you have to download, install devkitpro and follow these co
  
  ## Issues 🚩 
  
- Lakka doesn't work. But I will try to add fix this
+ Lakka doesn't work. But I will try to add fix 
  
 
 ## Credits 📜 
