@@ -109,6 +109,7 @@ void Menu::printAbout(){
     SDL_Texture* tSciresM = window.loadString("- SciresM for fusee");
     SDL_Texture* tCTCaer = window.loadString("- CTCaer for hekate");
     SDL_Texture* tshchmue = window.loadString("- shchmue for lockpick");
+    SDL_Texture* tPolo = window.loadString("- created by PoloNX");
     SDL_Texture* tpressA = window.loadString("- PRESS A TO EXIT !");
 
     SDL_Point size = getsize(tCredit);
@@ -120,7 +121,9 @@ void Menu::printAbout(){
     size = getsize(tshchmue);
     vEntity.push_back(Entity(Vector2f(340, 290), tshchmue, size.x, size.y , 0, 0));
     size = getsize(tpressA);
-    vEntity.push_back(Entity(Vector2f(340, 350), tpressA, size.x, size.y , 0, 0));
+    vEntity.push_back(Entity(Vector2f(340, 410), tpressA, size.x, size.y , 0, 0));
+    size = getsize(tPolo);
+    vEntity.push_back(Entity(Vector2f(340, 350), tPolo, size.x, size.y , 0, 0));
 
     for (auto i : vEntity){
             window.render(i, 1);
