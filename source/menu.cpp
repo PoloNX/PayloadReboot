@@ -11,8 +11,6 @@
 #include "Cursor.hpp"
 #include "Input.hpp"
 
-
-
 SDL_Point getsize(SDL_Texture* texture) {
 	SDL_Point size;
 	SDL_QueryTexture(texture, NULL, NULL, &size.x, &size.y);
@@ -22,6 +20,7 @@ SDL_Point getsize(SDL_Texture* texture) {
 Menu::Menu(RenderWindow pWindow)
 {
     window = pWindow;
+    std::cout << "1\n";
 
     //Create texture
     tTitle = window.loadString("PayloadReboot");
@@ -31,7 +30,7 @@ Menu::Menu(RenderWindow pWindow)
     tHekate = window.loadTexture("gfx/hekate.png");
     tAMS = window.loadTexture("gfx/fusee.png");
     tLockpick = window.loadTexture("gfx/lockpick.png");
-    tLakka = window.loadTexture("gfx/lakka.png");
+    tUdpih = window.loadTexture("gfx/udpih.png");
 
     //Create rect
     /*rectHekate = { 107, 0, 258, 258};
@@ -52,6 +51,7 @@ Menu::Menu(RenderWindow pWindow)
 
 void Menu::printMenu()
 {
+    std::cout << "1\n";
     std::vector<Entity> vEntity {};
     std::vector<Entity> vEntityCursor {};
 
@@ -66,12 +66,14 @@ void Menu::printMenu()
     }
     rectTemplate.x = 105;
 
+    std::cout << "1\n";
     /*ICONS HEKATE AMS...*/
     vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x, rectTemplate.y), tHekate, 258, 258, 0, 0));
     vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + rectTemplate.w + 14, rectTemplate.y), tAMS, 258, 258, 0, 0));
     vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + (rectTemplate.w + 14) * 2, rectTemplate.y), tLockpick, 258, 258, 0, 0));
-    //vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + (rectTemplate.w + 14) * 3, rectTemplate.y), tLakka, 258, 258, 0, 0));
+    vEntityCursor.push_back(Entity (Vector2f(rectTemplate.x + (rectTemplate.w + 14) * 3, rectTemplate.y), tUdpih, 258, 258, 0, 0));
 
+    std::cout << "1\n";
     /*CIRCLE BEHIND SMALL ICONS*/
     window.drawCircleBehindIcons();
 
@@ -109,6 +111,7 @@ void Menu::printAbout(){
     SDL_Texture* tSciresM = window.loadString("- SciresM for fusee");
     SDL_Texture* tCTCaer = window.loadString("- CTCaer for hekate");
     SDL_Texture* tshchmue = window.loadString("- shchmue for lockpick");
+    SDL_Texture* tGary = window.loadString("- GaryOderNichts for udpih");
     SDL_Texture* tPolo = window.loadString("- created by PoloNX");
     SDL_Texture* tpressA = window.loadString("- PRESS A TO EXIT !");
 
@@ -120,6 +123,8 @@ void Menu::printAbout(){
     vEntity.push_back(Entity(Vector2f(340, 260), tCTCaer, size.x, size.y , 0, 0));
     size = getsize(tshchmue);
     vEntity.push_back(Entity(Vector2f(340, 290), tshchmue, size.x, size.y , 0, 0));
+    size = getsize(tGary);
+    vEntity.push_back(Entity(Vector2f(340, 320), tGary, size.x, size.y , 0, 0));
     size = getsize(tpressA);
     vEntity.push_back(Entity(Vector2f(340, 410), tpressA, size.x, size.y , 0, 0));
     size = getsize(tPolo);

@@ -17,7 +17,7 @@ private:
     SDL_Texture* tAMS;
     SDL_Texture* tHekate;
     SDL_Texture* tLockpick;
-    SDL_Texture* tLakka;
+    SDL_Texture* tUdpih;
     RenderWindow window;
     SDL_Rect rectTemplate;
 public:

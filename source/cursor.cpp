@@ -1,5 +1,6 @@
 #include <SDL.h>
 #include <SDL_image.h>
+#include <iostream>
 #include <SDL_ttf.h>
 
 #include "Entity.hpp"
@@ -114,6 +115,7 @@ void Cursor::cursorRecenter()
 
 void Cursor::printCursor(RenderWindow render)
 {
+    std::cout << "1\n";
     cursorRecenter();
     refreshPos();
     if (line == 0){

@@ -21,13 +21,13 @@ To build the project you have to download, install devkitpro and follow these co
  
  ## Issues 🚩 
  
- Lakka doesn't work. But I will try to add fix 
- 
+Exit button doesn't work.
 
 ## Credits 📜 
 
 - Thanks SciresM for fusee : https://github.com/Atmosphere-NX/Atmosphere
 - Thanks CTCaer for hekate : https://github.com/CTCaer/hekate/releases
 - Thanks shchmue for lockpick_rcm : https://github.com/shchmue/Lockpick_RCM
+- Thanks GaryOderNichts for udpih : https://github.com/GaryOderNichts/udpih_nxpayload
 - Thanks Zoria to added me in his pack : https://github.com/THZoria/AtmoPack-Vanilla
 

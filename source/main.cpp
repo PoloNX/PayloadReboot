@@ -16,6 +16,8 @@ void init();
 int main(int argc, char *argv[])
 {
     init();
+
+	std::cout << "1\n";
   
     RenderWindow window("PayloadReboot", 1280, 720);
     Menu menu (window);

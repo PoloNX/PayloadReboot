@@ -72,12 +72,12 @@ std::string whichPayload(int payload)
         return "payload/lockpick.bin";
     }
 
-    else if (payload > 2){
-        return "null";
+    else if (payload == 3){
+        return "payload/udpih.bin";
     }
 }
 
-void Reboot::rebootNow(int payload) //0 = hekate, 1 = ams, 2 = lockpick, 3 = lakka
+void Reboot::rebootNow(int payload) //0 = hekate, 1 = ams, 2 = lockpick, 3 = udpih
 {
     Result rc = splInitialize();
 
