@@ -72,6 +72,8 @@ int main(int argc, char *argv[])
 	SDL_Quit();
 	IMG_Quit();
 	TTF_Quit();
+	socketExit();
+	std::cout << "end" << std::endl;
 	return 0;
 }
 
